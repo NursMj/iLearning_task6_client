@@ -5,6 +5,7 @@ function AutocompleteInput({users, inputName, setSelected, selected}: any) {
   const options = users
 
   const handleInputChange = (event: any, newValue: any) => {
+    event.preventDefault()
     setSelected(newValue)
   }
 

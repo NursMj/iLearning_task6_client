@@ -7,7 +7,7 @@ import Header from './components/Header'
 
 
 function App() {
-  const [isLogedIn, setIsLogedIn] = useState(false)
+  const [isLogedIn, setIsLogedIn] = useState(localStorage.getItem('userName'))
 
   return (
     <BrowserRouter>
